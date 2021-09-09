@@ -1,0 +1,40 @@
+/*colors*/
+$jet: #2F2F2F;
+$ebony: #666C5C;
+$floralWhite: #F4EFE8;
+$laurelGreen: #a9c295;
+$honeyYellow: #F7B32B;
+
+/* media querys */
+$laptop: "(max-width:1024px)";
+$tablet: "(max-width:768px)";
+$mobile: "(max-width:425px)";
+
+
+@import 'placeholders';
+@import 'mixin';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+    background-color: $floralWhite;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+  
+    @import 'header';
+    @import 'articulos';
+    @import 'recetasMasVistas';
+    @import 'productos';
+    @import 'recetas';
+    @import 'quienessomos';
+    @import 'contacto';
+    @import 'footer';
+    @import '404';
+  }
+  

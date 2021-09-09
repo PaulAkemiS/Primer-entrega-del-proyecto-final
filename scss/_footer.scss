@@ -1,0 +1,46 @@
+.pie {
+    background-image: url("../Imagenes/Footer2.jpg");
+    background-size: cover;
+    height: 17rem;
+    font-size: 20px;
+    line-height: 35px;
+    grid-area: footer;
+    display:flex;
+    flex-direction: row;
+
+    .icono {
+        width: 2.5rem;
+        margin: 20px;
+
+        @media #{$mobile} {
+            width: 2rem;
+        }
+    }
+  
+    .pie__arriba {
+        text-align: right;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left: 62rem;
+
+        @media #{$laptop} {
+            display: flex;
+            flex-direction: column;
+            margin-left: 38rem;
+        }
+
+        @media #{$tablet} {
+            display: flex;
+            flex-direction: column;
+            margin-left: 33rem;
+        }
+
+        @media #{$mobile} {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10rem;
+        }
+
+    }
+} 
+  

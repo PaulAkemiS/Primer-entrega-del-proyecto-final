@@ -1,0 +1,127 @@
+.titulo1 {
+  
+    @extend %fontTitulo1;
+
+    @media #{$tablet} {    
+        font-size: 3rem;
+        margin-top: 20vh;
+        margin-bottom: 10vh;    
+    }
+    @media #{$mobile} {     
+        font-size: 2rem;
+        margin: 3rem 0 3rem 0;             
+    }
+}
+
+.seccionContacto {
+    display: flex;
+    flex-direction: row;    
+    margin: 10rem 15rem 16rem 14rem;
+
+    .imgContacto {
+        height: 58rem;
+        margin-right:0rem;
+    
+        @media #{$laptop} {    
+            margin: 0 0 4rem 1rem;    
+        }
+
+        @media #{$tablet} {
+            display: none;
+        }
+    }
+    
+    .recuadro {
+        background-color: $ebony;
+        width: 40rem;
+        display: flex;
+        flex-direction: column; 
+        padding: 2rem 0rem 2rem 3rem; 
+    
+          
+        .recuadro__form-label {
+            color: $floralWhite;
+            font-size:20px;
+            text-align:left;
+            margin-bottom:10px;       
+    
+            @media #{$tablet} {
+                font-size: 25px;
+            }
+            @media #{$mobile} { 
+                font-size: 20px;
+            }
+        }
+    
+        .recuadro__form-label-select {
+            color:$floralWhite;
+            font-size:20px;
+    
+            .elige {
+                color: $ebony;
+            }
+    
+            @media #{$mobile} { 
+                font-size: 15px;
+            }
+        }
+    
+        .recuadro__cajaTexto {
+            width:20rem;
+            font-size: 20px;
+            margin-bottom:15px;
+    
+            @media #{$tablet} {
+                font-size: 15px;
+            }
+            @media #{$mobile} { 
+                width: 15rem;
+            }
+        }
+    
+        .recuadro__cajaTexto-checkBox {
+            width:20px;
+        }
+    
+        .recuadro__form-label-cuadro {
+            height: 10rem;
+    
+            @media #{$mobile} { 
+                width: 15rem;
+            }
+        }
+    
+        .btn-orange{
+            color: white;
+            background-color:#F7B32B ;
+            width: 8rem;   
+    
+            @media #{$mobile} { 
+                width: 7rem;
+                margin: auto;
+            }
+        }
+      
+        .btn-rounded{
+            border-radius: 5%;
+        }
+    
+        @media #{$laptop} {
+            margin: 0 1rem 4rem 0;
+        }
+
+        @media #{$tablet} {
+            width: 30rem;
+            margin-left: 8rem;
+        }
+
+        @media #{$mobile} { 
+            margin-left: 1rem;
+        }
+    }
+
+    @media #{$laptop} {
+        margin: 3rem 0 3rem 1rem;
+    }
+}
+

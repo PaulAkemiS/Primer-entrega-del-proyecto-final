@@ -1,0 +1,24 @@
+%fontTitulo1 {
+    font-size: 4rem;
+    text-align: center;
+    color: $jet;
+    font-weight: bolder;
+    border-bottom: #2F2F2F solid 3px;
+    margin: 6rem 2rem 4rem 2rem;
+}
+
+%fontTitulo2 {
+    color: $laurelGreen;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin:4rem 15rem 4rem 15rem;
+    padding: 20px;    
+}
+
+%fontTitulo3 {
+    color: $ebony;
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
+}

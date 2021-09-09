@@ -1,0 +1,150 @@
+#header {
+    background-image: url("../Imagenes/Header1.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 35rem;
+    
+    #headerGrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 70%;
+        grid-template-areas: 
+        "nav"
+        "logo";
+
+        #logo {          
+            width: 18rem;    
+            margin-top: 5rem;
+            margin-left: 37vw;
+            grid-area: logo;
+            z-index: 2;
+
+            @media #{$laptop} {                
+                width: 22vw;
+            }             
+            @media #{$tablet} {               
+                width: 30vw;
+                margin-top: 10vh; 
+                margin-bottom: 20vh;               
+            }
+
+            @media #{$mobile} {                 
+                width: 40vw;
+                margin-top: 2.5rem;
+                margin-left: 8rem;
+            } 
+
+            @media (max-width:375px) {                 
+                width: 40vw;
+                margin-top: 2.5rem;
+                margin-left: 7rem;
+            }                    
+        }        
+
+        .sticky{
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        .list {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            grid-area: nav;
+            justify-content: space-around;
+            margin-top: 30px;
+            position: relative;
+            background-color: linear-gradient(to bottom,rgb(77, 77, 77));
+            z-index: 2;
+              
+            .list__itemList {
+                list-style-type: none;
+                display: inline-block;
+                position: relative;
+                
+                .sublist{
+                    display: none;
+                    position: absolute;
+                    font-size: 7px;
+                    line-height: 40px;
+                    background-color: $jet;
+                    width: 250px;
+                    list-style-type: none;
+                    padding: 0;
+                }
+            }
+
+            .list__itemList a {
+                color: $floralWhite;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .list__itemList a:hover {
+                color: $honeyYellow;
+            } 
+            
+            .list__itemSublist{
+                text-align: left;
+            }
+                       
+            .list__itemSubmenu:hover > .sublist{
+                display: block;
+            }
+
+            @media #{$tablet} {                 
+                display:none; 
+            } 
+
+            @media #{$mobile} {                 
+                display:none; 
+            } 
+        }
+    }
+
+    .navbar {
+        display: none;
+
+        .offcanvas {
+            background-color: $jet;
+
+            .offcanvas-title {
+                color: $floralWhite;
+
+                .navbar-nav a{
+                    @media #{$tablet} {               
+                        display:block;   
+                        
+                        a:hover {
+                            color: $honeyYellow;
+                        }
+                    }
+            
+                    @media #{$mobile} {                 
+                        display:block; 
+
+                        &:hover {
+                            color: $honeyYellow;
+                        }
+                    }        
+                }
+            }
+        }
+
+        @media #{$tablet} {               
+            display:block;   
+                     
+        }
+
+        @media #{$mobile} {                 
+            display:block; 
+        }        
+    }   
+    
+    @media #{$mobile} {                 
+        height: 20rem; 
+    }  
+}
+
